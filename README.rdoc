@@ -1,3 +1,3 @@
 == README
 
-This sample demonstrate how to use dynamic Bootstrap dialog to create, read,  update, and delete records in Rails 4.2 application.
+This sample project demonstrate how to use dynamic Bootstrap dialog to create, read,  update, and delete records in Rails 4.2 application.
