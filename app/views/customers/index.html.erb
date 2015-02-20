@@ -6,7 +6,6 @@
   </div>
   <div class="new-customer"></div>
 
-  <% if @customers.size != 0 %>
   <table id class="table table-bordered table-striped">
     <thead>
     <tr>
@@ -21,9 +20,6 @@
     <%= render @customers %>
     </tbody>
   </table>
-  <% else %>
-    <h4 class="text-center">No Customers.</h4>
-  <% end %>
 
   <%= render 'dialog' %>
 
