@@ -1,0 +1,30 @@
+<div class="container">
+
+  <h2>Customers</h2>
+  <div class="well">
+    <%= link_to "New Customer", new_customer_path, remote: true, class: "btn btn-primary" %>
+  </div>
+  <div class="new-customer"></div>
+
+  <% if @customers.size != 0 %>
+  <table id class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="customers">
+    <%= render @customers %>
+    </tbody>
+  </table>
+  <% else %>
+    <h4 class="text-center">No Customers.</h4>
+  <% end %>
+
+  <%= render 'dialog' %>
+
+</div>
