@@ -44,7 +44,6 @@ class CustomersController < ApplicationController
 
 
   def destroy
-
     @customer.destroy
     respond_to do |format|
       format.js

@@ -11,7 +11,7 @@ $ ->
   $.rails.showConfirmDialog = (link) ->
     message = link.attr 'data-confirm'
     html = """
-           <div class="modal fade" id="confirmationDialog">
+           <div class="modal" id="confirmationDialog">
              <div class="modal-dialog">
                <div class="modal-content">
                  <div class="modal-header">
@@ -26,5 +26,5 @@ $ ->
              </div>
            </div>
            """
-    $(html).modal()
+    $(html).modal('show')
     $('#confirmationDialog .confirm').on 'click', -> $.rails.confirmed(link)
