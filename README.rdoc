@@ -1,3 +1,5 @@
 == README
 
 This sample project demonstrate how to use dynamic Bootstrap dialogs to create, read,  update, and delete records in Rails 4.2 application.
+
+http://www.benkirane.ch/ajax-bootstrap-modals-rails/
