@@ -4,6 +4,7 @@
   <td><%= customer.email %></td>
   <td><%= customer.address %></td>
   <td>
+    <%= link_to 'Show', customer, remote:true, :class => 'btn btn-sm btn-primary' %>
     <%= link_to 'Edit', edit_customer_path(customer), remote: true, :class => 'btn btn-sm btn-info' %>
     <%= link_to 'Delete', customer, remote: true, :method => :delete, data: {confirm: "Delete Customer: #{customer.first_name} #{customer.last_name}"}, :class => 'btn btn-sm btn-danger' %>
   </td>
